@@ -2,7 +2,7 @@
 يولد جمل واقتباسات مختلفة من قصص كلاسيكية قديمة مثل: مغامرات شيرلوك هولمز، كبرياء وهوى، توم سوير وغيرها
 <br>Arabic Lorem Ipsum Generator that generates various qoutes and sentences from old classics like: the adventures of Sherolck Holmes, Pride and Prejudice, Tom Sawyer, and others.
 
-![](/ScreenShot.png?raw=true)
+![](/screenShot.png?raw=true)
 
 ## الحقوق و المراجع - Credits and References
 
