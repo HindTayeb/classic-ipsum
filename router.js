@@ -6,15 +6,17 @@ const fs = require("fs");
 // Require express and create an express router object
 const express = require('express');
 const router = express.Router();
-var port = process.env.PUBLIC_URL
+let port = process.env.PUBLIC_URL
 
 // Route that serves index.html
 router.get(port+'/', (request, response) => {
   response.setHeader('Content-Type', 'text/html');
   // Capture the contents of index.html in a variable
   let fileContents = fs.readFileSync("./index.html", {encoding: "utf8"});
+  const sanitizer = new Sanitizer();
+  const sanitized_fileContents = sanitizer.sanitize(fileContents);
   // Send a response to the client with the index.html file
-  response.write(fileContents);
+  response.write(sanitized_fileContents);
   response.end();
 });
 
